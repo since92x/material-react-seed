@@ -16,12 +16,12 @@ import GridOn from '@material-ui/icons/GridOn';
 // import MonetizationOn from '@material-ui/icons/MonetizationOn';
 // import LockOpen from '@material-ui/icons/LockOpen';
 
-export default [
+const dashRoutes = [
   {
     path: '/dashboard',
     name: 'dashboard',
     icon: DashboardIcon,
-    component: Typography,
+    component: ExtendedTables,
   },
   {
     collapse: true,
@@ -51,3 +51,5 @@ export default [
     ],
   },
 ];
+
+export default dashRoutes;

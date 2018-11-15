@@ -1,5 +1,5 @@
 import {
-  container,
+  containerFluid,
   defaultFont,
   primaryColor,
   defaultBoxShadow,
@@ -28,7 +28,7 @@ const headerStyle = theme => ({
     display: "block"
   },
   container: {
-    ...container,
+    ...containerFluid,
     minHeight: "50px"
   },
   flex: {
@@ -41,13 +41,12 @@ const headerStyle = theme => ({
     borderRadius: "3px",
     textTransform: "none",
     color: "inherit",
-    margin: "0",
+    paddingTop: "0.625rem",
+    paddingBottom: "0.625rem",
+    margin: "0 !important",
     "&:hover,&:focus": {
       background: "transparent"
     }
-  },
-  appResponsive: {
-    top: "8px"
   },
   primary: {
     backgroundColor: primaryColor,
@@ -73,6 +72,19 @@ const headerStyle = theme => ({
     backgroundColor: dangerColor,
     color: "#FFFFFF",
     ...defaultBoxShadow
+  },
+  sidebarMinimize: {
+    float: "left",
+    padding: "0 0 0 15px",
+    display: "block",
+    color: "#555555"
+  },
+  sidebarMinimizeRTL: {
+    padding: "0 15px 0 0 !important"
+  },
+  sidebarMiniIcon: {
+    width: "20px",
+    height: "17px"
   }
 });
 

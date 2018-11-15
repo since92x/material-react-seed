@@ -34,7 +34,7 @@ const sidebarStyle = theme => ({
     transitionProperty: 'top, bottom, width',
     transitionDuration: '.2s, .2s, .35s',
     transitionTimingFunction: 'linear, linear, ease',
-    // overflow: 'auto',
+    overflow: 'auto',
     ...boxShadow,
     width: drawerWidth,
     [theme.breakpoints.up('md')]: {

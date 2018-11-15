@@ -1,5 +1,5 @@
-import RTL from 'layouts/RTL.jsx';
+import Dashboard from 'layouts/Dashboard.jsx';
 
-const indexRoutes = [{ path: '/', component: RTL }];
+const indexRoutes = [{ path: '/', component: Dashboard }];
 
 export default indexRoutes;
